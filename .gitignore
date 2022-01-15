@@ -16,6 +16,7 @@
 
 # RStudio files
 .Rproj.user/
+*.Rproj
 
 # produced vignettes
 vignettes/*.html
@@ -34,3 +35,16 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# MAC OSX
+*.DS_Store
+
+# Data
+cb_2018_us_nation_5m*
+/data
+
+# Figures
+/figures
+
+# HTML
+*.html
