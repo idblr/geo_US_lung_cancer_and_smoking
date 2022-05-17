@@ -5,11 +5,13 @@
 # Created by: Ian Buller, Ph.D., M.A. (GitHub: @idblr)
 # Created on: January 15, 2022
 #
-# Most recently modified by:
-# Most recently modified on:
+# Most recently modified by: @idblr
+# Most recently modified on: May 17, 2022
 #
 # Notes:
 # A) Code for essential functions to calculate the Lee's L statistic and False Discovery Rate
+# B) 05/17/2022: Consistent variable name based on merged data object; rename NAs as "Suppressed" in LeeL() function
+# C) 05/17/2022: Correctly set "dat" in LeeL() function
 # ----------------------------------------------------------------------- #
 
 cat("\nLoading custom functions for Lee's L statistic\n")
@@ -62,14 +64,14 @@ simula_lee <- function(x, y, listw, nsim = nsim, zero.policy = NULL, na.action =
 ## Calculate Local Lee's L statistic with multiple testing correction by False Discovery Rate
 LeeL <- function(dat, x, y, label, numsim = 100,...) {
   
-  if(class(alcove_proj) != "SpatialPolygonsDataFrame") stop("dat is not of class 'SpatialPolygonsDataFrame'")
+  if(class(dat) != "SpatialPolygonsDataFrame") stop("dat is not of class 'SpatialPolygonsDataFrame'")
   
   temp <- dat[stats::complete.cases(dat[[y]]) & stats::complete.cases(dat[[x]]), ]
   X <- temp[[x]]
   Y <- temp[[y]]
   
   nb0 <- spdep::poly2nb(temp) # QUEEN
-  no_neighs <- which(spdep::card(nb0) == 0) # 3 empty geometries
+  no_neighs <- which(spdep::card(nb0) == 0) # empty geometries
   
   ### Nearest neighbor for empty geometries
   #### https://stat.ethz.ch/pipermail/r-sig-geo/2013-July/018864.html
@@ -136,8 +138,8 @@ LeeL <- function(dat, x, y, label, numsim = 100,...) {
                                  "High smoking - Low mortality", "Low smoking - Low mortality",
                                  "Not significant", "Suppressed"))
   
-  tmp <- temp[, c("GEOID.1", "STATEFP", "COUNTYFP", "NAME.1", "pval", "out")]
-  names(tmp) <- c("GEOID.1", "STATEFP", "COUNTYFP", "NAME", paste(label, "_LeeP", sep = ""), paste(label, "_LeeFDR", sep = ""))
+  tmp <- temp[, c("GEOID", "STATEFP", "COUNTYFP", "NAME", "pval", "out")]
+  names(tmp) <- c("GEOID", "STATEFP", "COUNTYFP", "NAME", paste(label, "_LeeP", sep = ""), paste(label, "_LeeFDR", sep = ""))
   out <- merge(dat, tmp)
   return(list(out = out,
               FDRpval = out_alpha))

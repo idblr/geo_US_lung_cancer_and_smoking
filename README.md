@@ -1,8 +1,9 @@
-## Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking
+Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src="hex/hex.png" width="120" align="right" />
+===================================================
 
 ![license](https://img.shields.io/badge/license-apache-yellow)
 
-**Date repository last updated**: January 15, 2022
+**Date repository last updated**: May 17, 2022
 
 ### Authors
 
@@ -26,10 +27,10 @@
 7.	Fielding School of Public Health, University of California Los Angeles, Los Angeles, CA, 90095, USA
 8.	Office of the Director, DCEG, NCI, NIH, Rockville, MD, 20850, USA
 
-### Project details
+### Project Details
 Lung cancer is the leading cause of cancer death in the United States (US) and variations in lung cancer mortality and smoking behavior are evident by sex and region. We apply geospatial statistical methods to describe patterns in lung cancer mortality rates (2005-2018) in relation to patterns in cigarette smoking prevalences (1997-2003) by sex at the US county level. Our findings identify counties where lung carcinogens other than smoking may be driving lung cancer mortality and where further study is needed. 
 
-#### Project timeframe
+#### Project Timeframe
 
 <table>
 <colgroup>
@@ -44,16 +45,16 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 </thead>
 <tbody>
 <td><p align="center">1997-2003</p></td>
-<td>NCI Model-based Small Area Estimates of Cancer-Related Measures smoking prevalences for persons aged 18+ years</td>
+<td>NCI Model-based Small Area Estimates of Cancer-Related Measures smoking prevalences for persons aged 18+ years (see data availability section below).</td>
 </tr>
 <td><p align="center">2005-2018</p></td>
-<td>Lung and bronchus cancer mortality rates among persons aged 20+ years from the National Vital Statistics System data from the National Center for Health Statistics</td>
+<td>Lung and bronchus cancer mortality rates among persons aged 20+ years from the National Vital Statistics System data from the National Center for Health Statistics (see data availability section below).</td>
 </tr>
 <td><p align="center">July 2020</p></td>
 <td>Project Initiation</td>
 </tr>
-<td><p align="center">TBD</p></td>
-<td>Initial manuscript submission for peer-review</td>
+<td><p align="center">March 2022</p></td>
+<td>Initial manuscript submission to <a href="https://cebp.aacrjournals.org/">Cancer Epidemiology, Biomarkers & Prevention</a> for peer-review</td>
 </tr>
 <td><p align="center">TBD</p></td>
 <td>Manuscript accepted in a peer-reviewed journal</td>
@@ -65,11 +66,11 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 </tbody>
 <table>
 
-### R-scripts included in this repository
+### R Scripts Included In This Repository
 
 This repository includes R-scripts use to calculate the geospatial techniques and render the figures found in the following peer-reviewed manuscript:
 
-[INSERT SUGGESTED CITATION HERE]
+Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_ (Submitted)
 
 <table>
 <colgroup>
@@ -87,7 +88,7 @@ This repository includes R-scripts use to calculate the geospatial techniques an
 <td>Custom functions to calculate the local Lee's L statistic with correction for multiple testing</td>
 </tr>
 <td><p align="center"><code>preparation.R</code></td>
-<td>Calculate the local Lee's L statistics for the four comparisons. Requires a data set to run (not included). See notes within. </td>
+<td>Calculate the local Lee's L statistics for the four comparisons. Requires a data set to run (not included; see notes within). </td>
 </tr>
 <td><p align="center"><code>figure1.R</code></p></td>
 <td>Generate Figure 1</td>
@@ -104,6 +105,12 @@ This repository includes R-scripts use to calculate the geospatial techniques an
 </tbody>
 <table>
 
+The repository also includes the code to create the project hexsticker.
+
+### Data Availability
+
+County-level U.S. lung cancer mortality rates and smoking prevalences are downloadable from [Model-based Small Area Estimates of Cancer-Related Measures](https://sae.cancer.gov/nhis-brfss/) from the [Surveillance Research Program](https://surveillance.cancer.gov/) within the [Division of Cancer Control and Population Sciences](https://cancercontrol.cancer.gov/) of the [National Cancer Institute](https://www.cancer.gov/) and the [National Vital Statistics System](https://www.cdc.gov/nchs/nvss/index.htm) from the [National Center for Health Statistics](https://www.cdc.gov/nchs/index.htm) of the [Centers for Disease Control and Prevention](https://www.cdc.gov/).
+
 ### Questions?
 
-For questions about the manuscript please e-mail the corresponding author [Dr. Rena R. Jones](mailto:rena.jones@nih.gov)
+For questions about the manuscript please e-mail the corresponding author [Dr. Rena R. Jones](mailto:rena.jones@nih.gov).

@@ -5,13 +5,14 @@
 # Created by: Ian Buller, Ph.D., M.A. (GitHub: @idblr)
 # Created on: January 15, 2022
 #
-# Most recently modified by:
-# Most recently modified on:
+# Most recently modified by: @idblr
+# Most recently modified on: May 17, 2022
 #
 # Notes:
 # A) Code to generate Supplemental Figure 2 in the manuscript
 # B) Female Lung Cancer Mortality Rate by Female Current Smoking Prevalence
 # C) For consistency with the manuscript, must run all four Lee's L statistics in order with the RNG seed (see 'preparation.R' file)
+# D) 05/17/2022: Update for correctly suppressed counties for each result by sex
 # ----------------------------------------------------------------------- #
 
 ####################
@@ -22,8 +23,7 @@
 ## Loads three objects
 ### A) 'Lee' an 'sf' object of the U.S. county-level lung cancer mortality rates, smoking prevalences, and Lee's L values
 ### B) 'FDRpvals' a 'data.frame' object of significant p-value cutoff for each bivariate comparison
-### C) "proj_l48_coast" an 'sf' object of the 2018 conterminous U.S.
-source("code/functions.R")
+### C) "proj_l48" an 'sf' object of the 2018 conterminous U.S.
 source("code/preparation.R") # Note: it will take many minutes to run the Lee's L statistics
 
 ############
@@ -65,7 +65,7 @@ CMRF <- ggplot2::ggplot() +
   ggplot2::geom_sf(data = LCF,
                    ggplot2::aes(fill = at),
                    color = "black") +
-  ggplot2::geom_sf(data = proj_l48_coast,
+  ggplot2::geom_sf(data = proj_l48,
                    fill = "transparent",
                    color = "black",
                    lwd = 0.33*f) +
@@ -103,7 +103,7 @@ PCSF <- ggplot2::ggplot() +
   ggplot2::geom_sf(data = CSF,
                    ggplot2::aes(fill = at),
                    color = "black") +
-  ggplot2::geom_sf(data = proj_l48_coast,
+  ggplot2::geom_sf(data = proj_l48,
                    fill = "transparent",
                    color = "black",
                    lwd = 0.33*f) +
@@ -121,7 +121,7 @@ LCSF <- ggplot2::ggplot() +
   ggplot2::geom_sf(data = Lee,
                    ggplot2::aes(fill = LCSF_LeeFDR),
                    color = "black") +
-  ggplot2::geom_sf(data = proj_l48_coast,
+  ggplot2::geom_sf(data = proj_l48,
                    fill = "transparent",
                    color = "black",
                    lwd = 0.33*f) +

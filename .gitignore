@@ -40,7 +40,6 @@ rsconnect/
 *.DS_Store
 
 # Data
-cb_2018_us_nation_5m*
 /data
 
 # Figures
