@@ -40,10 +40,15 @@ rsconnect/
 *.DS_Store
 
 # Data
-/data
+data/*
+!data/*.md
 
 # Figures
-/figures
+figures/*
+!figures/*.md
 
 # HTML
 *.html
+
+# Sandbox
+sandbox.R

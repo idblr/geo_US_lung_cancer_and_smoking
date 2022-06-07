@@ -3,16 +3,16 @@ Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src
 
 ![license](https://img.shields.io/badge/license-apache-yellow)
 
-**Date repository last updated**: May 17, 2022
+**Date repository last updated**: June 07, 2022
 
 ### Authors
 
-* **Alaina H. Shreves**<sup>1,2</sup> [ORCID](https://orcid.org/0000-0002-0127-4391)
-* **Ian D. Buller**<sup>3,4</sup> [ORCID](https://orcid.org/0000-0001-9477-8582)
+* **Alaina H. Shreves**<sup>1,2</sup> - [ORCID](https://orcid.org/0000-0002-0127-4391)
+* **Ian D. Buller**<sup>3,4</sup> - [ORCID](https://orcid.org/0000-0001-9477-8582)
 * **Elizabeth Chase**<sup>5,6</sup> - [ORCID](https://orcid.org/0000-0003-0452-2976)
 * **Hannah Creutzfeldt**<sup>3,7</sup>
-* **Jared A. Fisher**<sup>3</sup> [ORCID](https://orcid.org/0000-0001-9203-5742)
-* **Barry I. Graubard**<sup>6</sup> [ORCID](https://orcid.org/0000-0002-6787-1105)
+* **Jared A. Fisher**<sup>3</sup> - [ORCID](https://orcid.org/0000-0001-9203-5742)
+* **Barry I. Graubard**<sup>6</sup> - [ORCID](https://orcid.org/0000-0002-6787-1105)
 * **Robert N. Hoover**<sup>8</sup>
 * **Debra T. Silverman**<sup>3</sup>
 * **Susan S. Devesa**<sup>5</sup> - *Co-Senior Author*
@@ -20,8 +20,8 @@ Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src
 
 1.	Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University, Boston, MA, 02115, USA
 2.	Trans-Divisional Research Program, Division of Cancer Epidemiology and Genetics (DCEG), National Cancer Institute (NCI), National Institutes of Health (NIH), Rockville, MD, 20850, USA
-3.	Occupational and Environmental Epidemiology Branch, Division of Cancer Epidemiology and Genetics, National Cancer Institute, Rockville, MD, 20850, USA, Rockville, MD, 20850, USA
-4.  Cancer Prevention Fellowship Program, Division of Cancer Prevention, National Cancer Institute, Rockville, MD, 20850, USA
+3.	Occupational and Environmental Epidemiology Branch, DCEG, NCI, Rockville, MD, 20850, USA
+4.  Cancer Prevention Fellowship Program, Division of Cancer Prevention, NCI, Rockville, MD, 20850, USA
 5.	Infections and Immunology Branch, DCEG, NCI, NIH, Rockville, MD, 20850, USA
 6.	Department of Biostatistics, University of Michigan School of Public Health, University of Michigan, Rockville, MD, 20850, USA
 7.	Fielding School of Public Health, University of California Los Angeles, Los Angeles, CA, 90095, USA
@@ -68,7 +68,7 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 
 ### R Scripts Included In This Repository
 
-This repository includes R-scripts use to calculate the geospatial techniques and render the figures found in the following peer-reviewed manuscript:
+This repository includes R scripts use to calculate the geospatial techniques and render the figures found in the following peer-reviewed manuscript:
 
 Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_ (Submitted)
 
@@ -79,7 +79,7 @@ Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN,
 </colgroup>
 <thead>
 <tr class="header">
-<th>R-Script</th>
+<th>R Script</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -106,6 +106,12 @@ Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN,
 <table>
 
 The repository also includes the code to create the project hexsticker.
+
+### Getting Started
+
+* Step 1: You must download the data (see Data Availability section)
+* Step 2: Save the data set to the data directory in this repository. Currently specified as a CSV file, but modify the path on Line 58 of the `preparation.R` file based on data location and file name
+* Step 3: Run R scripts for figures. The `preparation.R` file will source the `functions.R` file.
 
 ### Data Availability
 
