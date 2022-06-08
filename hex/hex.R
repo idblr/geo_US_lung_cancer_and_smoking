@@ -1,17 +1,17 @@
 # ------------------------------------------------------------------------------ #
-# Hexsticker for the GitHub Repository idblr/US_Lung_Cancer_and_Smoking
+# Hexsticker for the GitHub Repository idblr/geo_US_lung_cancer_and_smoking
 # ------------------------------------------------------------------------------ #
 #
 # Created by: Ian Buller, Ph.D., M.A. (GitHub: @idblr)
 # Created on: May 17, 2022
 #
-# Recently modified by:
-# Recently modified on:
+# Recently modified by: @idblr
+# Recently modified on: June 08, 2022
 #
 # Notes:
 # A) Uses the "hexSticker" package
 # B) Modified image from a companion manuscript figure
-# D) Hexsticker for the GitHub Repository https://github.com/idblr/US_Lung_Cancer_and_Smoking
+# D) Hexsticker for the GitHub Repository https://github.com/idblr/geo_US_lung_cancer_and_smoking
 # ------------------------------------------------------------------------------ #
 
 ####################
@@ -57,9 +57,9 @@ LeeHex <- ggplot2::ggplot() +
 library(hexSticker)
 
 s <- hexSticker::sticker(subplot = LeeHex,
-                         package = "U.S.\nLung Cancer\nMortality and\nSmoking Prevalence",
-                         p_size = 2.5, p_x = 1.33, p_y = 0.95, p_color = "black", # title
-                         s_x = 0.05, s_y = 0.975, s_width = 2.4, s_height = 2.4, # symbol
+                         package = "Geographic\nPatterns in\nU.S. Lung Cancer\nMortality and\nCigarette Smoking",
+                         p_size = 2.5, p_x = 1.37, p_y = 0.95, p_color = "black", # title
+                         s_x = 0.05, s_y = 0.982, s_width = 2.36, s_height = 2.36, # symbol
                          h_fill = "white", # inside
                          h_color = "black", # outline
                          dpi = 1000, # resolution

@@ -3,7 +3,7 @@ Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src
 
 ![license](https://img.shields.io/badge/license-apache-yellow)
 
-**Date repository last updated**: June 07, 2022
+**Date repository last updated**: June 08, 2022
 
 ### Authors
 
@@ -68,7 +68,7 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 
 ### R Scripts Included In This Repository
 
-This repository includes R scripts use to calculate the geospatial techniques and render the figures found in the following peer-reviewed manuscript:
+This repository includes R scripts use to calculate the Lee's L statistic and render the geographic visualizations found in the following peer-reviewed manuscript:
 
 Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_ (Submitted)
 
