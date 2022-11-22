@@ -1,21 +1,22 @@
 Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src="hex/hex.png" width="120" align="right" />
 ===================================================
 
-![license](https://img.shields.io/badge/license-apache-yellow)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![GitHub last commit](https://img.shields.io/github/last-commit/idblr/geo_US_lung_cancer_and_smoking)
 
-**Date repository last updated**: June 08, 2022
+**Date repository last updated**: November 22, 2022
 
 ### Authors
 
 * **Alaina H. Shreves**<sup>1,2</sup> - [ORCID](https://orcid.org/0000-0002-0127-4391)
 * **Ian D. Buller**<sup>3,4</sup> - [ORCID](https://orcid.org/0000-0001-9477-8582)
 * **Elizabeth Chase**<sup>5,6</sup> - [ORCID](https://orcid.org/0000-0003-0452-2976)
-* **Hannah Creutzfeldt**<sup>3,7</sup>
+* **Hannah Creutzfeldt**<sup>3,7</sup> - [ORCID](https://orcid.org/0000-0001-7828-8735)
 * **Jared A. Fisher**<sup>3</sup> - [ORCID](https://orcid.org/0000-0001-9203-5742)
 * **Barry I. Graubard**<sup>6</sup> - [ORCID](https://orcid.org/0000-0002-6787-1105)
-* **Robert N. Hoover**<sup>8</sup>
-* **Debra T. Silverman**<sup>3</sup>
-* **Susan S. Devesa**<sup>5</sup> - *Co-Senior Author*
+* **Robert N. Hoover**<sup>8</sup> - [ORCID](https://orcid.org/0000-0003-4329-4371)
+* **Debra T. Silverman**<sup>3</sup> - [ORCID](https://orcid.org/0000-0001-8894-0301) 
+* **Susan S. Devesa**<sup>5</sup> - *Co-Senior Author* - [ORCID](https://orcid.org/0000-0003-3235-4148)
 * **Rena R. Jones**<sup>3</sup> - *Co-Senior Author* & *Corresponding Author* - [ORCID](https://orcid.org/0000-0003-1294-1679)
 
 1.	Department of Epidemiology, Harvard T.H. Chan School of Public Health, Harvard University, Boston, MA, 02115, USA
@@ -56,21 +57,20 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 <td><p align="center">March 2022</p></td>
 <td>Initial manuscript submission to <a href="https://cebp.aacrjournals.org/">Cancer Epidemiology, Biomarkers & Prevention</a> for peer-review</td>
 </tr>
-<td><p align="center">TBD</p></td>
-<td>Manuscript accepted in a peer-reviewed journal</td>
+<td><p align="center">September 2022</p></td>
+<td>Manuscript accepted by <a href="https://cebp.aacrjournals.org/">Cancer Epidemiology, Biomarkers & Prevention</a></td>
 </tr>
-<td><p align="center">TBD</p></td>
-<td>Manuscript published in a peer-reviewed journal</td>
+<td><p align="center">November 2022</p></td>
+<td>Manuscript published in <a href="https://doi.org/10.1158/1055-9965.EPI-22-0253">Cancer Epidemiology, Biomarkers & Prevention</td>
 </tr>
-
 </tbody>
 <table>
 
 ### R Scripts Included In This Repository
 
-This repository includes R scripts use to calculate the Lee's L statistic and render the geographic visualizations found in the following peer-reviewed manuscript:
+This repository includes R scripts used to calculate the Lee's L statistic and render the geographic visualizations found in the following peer-reviewed manuscript:
 
-Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_ (Submitted)
+Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_. DOI:[10.1158/1055-9965.EPI-22-0253](https://doi.org/10.1158/1055-9965.EPI-22-0253).
 
 <table>
 <colgroup>
@@ -105,7 +105,7 @@ Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN,
 </tbody>
 <table>
 
-The repository also includes the code to create the project hexsticker.
+The repository also includes the code to create the project hex sticker.
 
 ### Getting Started
 

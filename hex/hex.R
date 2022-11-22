@@ -1,17 +1,17 @@
 # ------------------------------------------------------------------------------ #
-# Hexsticker for the GitHub Repository idblr/geo_US_lung_cancer_and_smoking
+# Hex Sticker for the GitHub Repository idblr/geo_US_lung_cancer_and_smoking
 # ------------------------------------------------------------------------------ #
 #
 # Created by: Ian Buller, Ph.D., M.A. (GitHub: @idblr)
 # Created on: May 17, 2022
 #
 # Recently modified by: @idblr
-# Recently modified on: June 08, 2022
+# Recently modified on: July 23, 2022
 #
 # Notes:
 # A) Uses the "hexSticker" package
 # B) Modified image from a companion manuscript figure
-# D) Hexsticker for the GitHub Repository https://github.com/idblr/geo_US_lung_cancer_and_smoking
+# C) Hex sticker for the GitHub Repository https://github.com/idblr/geo_US_lung_cancer_and_smoking
 # ------------------------------------------------------------------------------ #
 
 ####################
@@ -50,7 +50,7 @@ LeeHex <- ggplot2::ggplot() +
   ggplot2::theme_void()
 
 #####################
-# CREATE HEXSTICKER #
+# CREATE HEX STICKER #
 #####################
 
 # Additional Packages
