@@ -1,10 +1,10 @@
-Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src="hex/hex.png" width="120" align="right" />
+Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src="hex/hex.png" width="120" align="right"/>
 ===================================================
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![GitHub last commit](https://img.shields.io/github/last-commit/idblr/geo_US_lung_cancer_and_smoking)
 
-**Date repository last updated**: November 22, 2022
+**Date repository last updated**: February 06, 2023
 
 ### Authors
 
@@ -35,8 +35,8 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 
 <table>
 <colgroup>
-<col width="20%" />
-<col width="80%" />
+<col width="20%"/>
+<col width="80%"/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -46,10 +46,10 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 </thead>
 <tbody>
 <td><p align="center">1997-2003</p></td>
-<td>NCI Model-based Small Area Estimates of Cancer-Related Measures smoking prevalences for persons aged 18+ years (see data availability section below).</td>
+<td>NCI Model-based Small Area Estimates of Cancer-Related Measures smoking prevalences for persons aged 18+ years (see data availability section below)</td>
 </tr>
 <td><p align="center">2005-2018</p></td>
-<td>Lung and bronchus cancer mortality rates among persons aged 20+ years from the National Vital Statistics System data from the National Center for Health Statistics (see data availability section below).</td>
+<td>Lung and bronchus cancer mortality rates among persons aged 20+ years from the National Vital Statistics System data from the National Center for Health Statistics (see data availability section below)</td>
 </tr>
 <td><p align="center">July 2020</p></td>
 <td>Project Initiation</td>
@@ -57,10 +57,10 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 <td><p align="center">March 2022</p></td>
 <td>Initial manuscript submission to <a href="https://cebp.aacrjournals.org/">Cancer Epidemiology, Biomarkers & Prevention</a> for peer-review</td>
 </tr>
-<td><p align="center">September 2022</p></td>
+<td><p align="center">November 2022</p></td>
 <td>Manuscript accepted by <a href="https://cebp.aacrjournals.org/">Cancer Epidemiology, Biomarkers & Prevention</a></td>
 </tr>
-<td><p align="center">November 2022</p></td>
+<td><p align="center">February 2023</p></td>
 <td>Manuscript published in <a href="https://doi.org/10.1158/1055-9965.EPI-22-0253">Cancer Epidemiology, Biomarkers & Prevention</td>
 </tr>
 </tbody>
@@ -70,12 +70,12 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 
 This repository includes R scripts used to calculate the Lee's L statistic and render the geographic visualizations found in the following peer-reviewed manuscript:
 
-Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_. DOI:[10.1158/1055-9965.EPI-22-0253](https://doi.org/10.1158/1055-9965.EPI-22-0253).
+Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN, Silverman DT, Devesa SS, Jones RR. (2023) Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking. _Cancer Epidemiology, Biomarkers & Prevention_, 32(2):193-201. DOI:[10.1158/1055-9965.EPI-22-0253](https://doi.org/10.1158/1055-9965.EPI-22-0253) PMID:[36413442](https://pubmed.ncbi.nlm.nih.gov/36413442/).
 
 <table>
 <colgroup>
-<col width="20%" />
-<col width="80%" />
+<col width="20%"/>
+<col width="80%"/>
 </colgroup>
 <thead>
 <tr class="header">
@@ -105,7 +105,7 @@ Shreves AH, Buller ID, Chase E, Creutzfeld H, Fisher JA, Graubard BI, Hoover RN,
 </tbody>
 <table>
 
-The repository also includes the code to create the project hex sticker.
+The repository also includes the code to create the project hexagon sticker.
 
 ### Getting Started
 
