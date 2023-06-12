@@ -6,12 +6,13 @@
 # Created on: January 15, 2022
 #
 # Most recently modified by: @idblr
-# Most recently modified on: May 17, 2022
+# Most recently modified on: June 5, 2023
 #
 # Notes:
 # A) Code for essential functions to calculate the Lee's L statistic and False Discovery Rate
-# B) 05/17/2022: Consistent variable name based on merged data object; rename NAs as "Suppressed" in LeeL() function
-# C) 05/17/2022: Correctly set "dat" in LeeL() function
+# B) 05/17/2022 (@idblr): Consistent variable name based on merged data object; rename NAs as "Suppressed" in LeeL() function
+# C) 05/17/2022 (@idblr): Correctly set "dat" in LeeL() function
+# D) 06/05/2023 (@idblr): Update to FDR calculation for multiple testing correction
 # ----------------------------------------------------------------------- #
 
 cat("\nLoading custom functions for Lee's L statistic\n")
@@ -19,12 +20,14 @@ cat("\nLoading custom functions for Lee's L statistic\n")
 # Select not in
 `%notin%` <- Negate(`%in%`) # https://www.r-bloggers.com/the-notin-operator/
 
-# False Discovery Rate
-fdr <- function(pvals, alpha = 0.05) {
+# False Discovery Rate (Benjamini & Hochberg, 1995; DOI: 10.1111/j.2517-6161.1995.tb02031.x)
+fdr <- function(pvals, alpha) {
+  pcrit <- NULL
   m <- length(pvals)
-  for (i in 1:length(pvals)) {
-    if (pvals[i] <= (i/m) * alpha) { return(pvals[i]) } 
+  for (i in 1:m) {
+    if (pvals[i] <= (i/m) * alpha) { pcrit <- pvals[i] }
   }
+  return(max(pcrit, pvals[1]))
 }
 
 # Local Lee
@@ -114,7 +117,7 @@ LeeL <- function(dat, x, y, label, numsim = 100,...) {
   
   #### Correction for Multiple Testing
   ##### False Discovery Rate
-  sort_pvals <- sort(as.vector(pvals), decreasing = TRUE)
+  sort_pvals <- sort(as.vector(pvals))
   out_alpha <- fdr(sort_pvals, alpha)
   sig <- pvals < out_alpha
   

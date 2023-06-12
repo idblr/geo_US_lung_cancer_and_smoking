@@ -4,7 +4,7 @@ Geographic Patterns in U.S. Lung Cancer Mortality and Cigarette Smoking <img src
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![GitHub last commit](https://img.shields.io/github/last-commit/idblr/geo_US_lung_cancer_and_smoking)
 
-**Date repository last updated**: February 06, 2023
+**Date repository last updated**: June 10, 2023
 
 ### Authors
 
@@ -61,7 +61,10 @@ Lung cancer is the leading cause of cancer death in the United States (US) and v
 <td>Manuscript accepted by <a href="https://cebp.aacrjournals.org/">Cancer Epidemiology, Biomarkers & Prevention</a></td>
 </tr>
 <td><p align="center">February 2023</p></td>
-<td>Manuscript published in <a href="https://doi.org/10.1158/1055-9965.EPI-22-0253">Cancer Epidemiology, Biomarkers & Prevention</td>
+<td>Manuscript published in <a href="https://doi.org/10.1158/1055-9965.EPI-22-0253">Cancer Epidemiology, Biomarkers & Prevention</a></td>
+</tr>
+<td><p align="center">June 2023</p></td>
+<td>Update to the False Discovery Rate <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">(Benjamini & Hochberg, 1995)</a> calculation for multiple testing correction that now orders the p-values in ascending order instead of in descending order.</td>
 </tr>
 </tbody>
 <table>
